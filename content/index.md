@@ -1,17 +1,14 @@
-```dataview
-TABLE WITHOUT ID
-file.link AS "제목",
-file.overview AS "미리보기",
-dateformat(file.mtime, "yyyy.MM.dd HH:m") AS "날짜"
-FROM ""
-WHERE file != this.file
-SORT file.mtime DESC
-LIMIT 25
-```
+---
+title: 
+description: 블로그 소개
+aliases: 
+tags: 
+draft: false
+date: 2024-06-16 17:01:54
+---
+Read this in English: [[EN/index|🏡]]
 
-```dataviewjs
-dv.list(dv.pages()
-.where(f => this.currentFilePath !== f.file.path)
-.sort(f => f.mdate)
-.map(p => p.file.link +  ' - ' + p.file.frontmatter.overview))
-```
+안녕하세요. 나도 김상욱입니다. 평범합니다. 광활한 세상에 깊이 없이 관심을 뿌리기만 하며 살고 있습니다. 이 블로그도 저를 닮을 겁니다. 
+그리고 글들은 아마 계속 수정될 겁니다.
+
+어쩌면 어떤 글은 존대하고 다른 글은 막 대할지도 모르겠습니다.
